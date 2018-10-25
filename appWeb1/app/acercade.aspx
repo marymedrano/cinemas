@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/app/Site1.Master" AutoEventWireup="true" CodeBehind="acercade.aspx.cs" Inherits="appWeb1.app.acercade" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/app/Site1.Master" AutoEventWireup="true" CodeBehind="acercade.aspx.cs" Inherits="Cinemas.app.acercade" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="styles/Main2.css" rel="stylesheet" type="text/css" />
