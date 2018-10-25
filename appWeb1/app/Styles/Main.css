@@ -1,0 +1,21 @@
+﻿body 
+
+{
+    background-color : #123; 
+    font-family : arial; 
+    color : black; 
+}
+H1 { 
+    font-size : 36pt; 
+    font-family : verdana,arial; 
+    text-decoration : underline; 
+    text-align : center;
+    background-color: aquamarine;
+} 
+P { 
+    font-size : 12pt; 
+    font-family : arial,helvetica; 
+    font-weight : normal; 
+ 
+} 
+
