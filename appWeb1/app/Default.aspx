@@ -1,21 +1,32 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/app/Site1.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Cinemas.app.Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="styles/Main2.css" rel="stylesheet" type="text/css" />
+	<link href="styles/Main2.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h2>Peliculas de estreno!</h2>
-    <div>
-        <ul>
-            <li><a href="Halloween.aspx">Halloween</a></li>
-            <li><a href="Venom.aspx">Venom</a></li>
-            <li><a href="Matar o morir">Matar o morir</a></li>
-            <li><a href="Un pequeño favor">un pequeño favor</a></li>
-            <li><a href="La sirenita">La sirenita</a></li>
-            <li><a href="Bruno y Ana">Bruno y Ana</a></li>
-            <li><a href="Juan pablo II">Juan Pablo II</a></li>
-            <li><a href="johny english">Johny English</a></li>
-        </ul>
-    </div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+				<h1>Películas en Promoción</h1>
+				<p>Lorem Ipsum passage, used since the 1500s "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Ver Catálogo</a></p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="list-group">
+				<asp:Repeater ID="Repeater1" runat="server" >
+					<ItemTemplate>
+						<li class="list-group-item">
+							<asp:Label runat="server" ID="movie" Text='<%# Eval("Title") %>' />
+						</li>
+					</ItemTemplate>
+				</asp:Repeater>
+			</ul>
+		</div>
+	</div>
 </asp:Content>
