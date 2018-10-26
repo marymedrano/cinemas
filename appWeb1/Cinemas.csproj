@@ -69,7 +69,9 @@
   <ItemGroup>
     <Content Include="app\acercade.aspx" />
     <Content Include="app\Default.aspx" />
+    <Content Include="app\ReservarWebForm.aspx" />
     <Content Include="app\Styles\Main.css" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +88,13 @@
     </Compile>
     <Compile Include="app\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="app\ReservarWebForm.aspx.cs">
+      <DependentUpon>ReservarWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app\ReservarWebForm.aspx.designer.cs">
+      <DependentUpon>ReservarWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="app\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>

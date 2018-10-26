@@ -14,7 +14,7 @@ namespace Cinemas.app
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			var movieService = new MovieServiceMock();
-			this.Repeater1.DataSource = movieService.FindFeatureMovies();
+			this.Repeater1.DataSource = movieService.FindFeaturedMovies();
 			this.Repeater1.DataBind();
 		}
 	}

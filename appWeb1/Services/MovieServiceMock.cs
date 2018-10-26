@@ -5,7 +5,7 @@ namespace Cinemas.Services
 {
 	public class MovieServiceMock : IMovieService
 	{
-		public List<MovieDto> FindFeatureMovies()
+		public List<MovieDto> FindFeaturedMovies()
 		{
 			return new List<MovieDto>
 			{
@@ -40,8 +40,12 @@ namespace Cinemas.Services
 				new MovieDto
 				{
 					Id = 8, Title = "John English"
-				}
-			};
+				},
+			    new MovieDto
+			    {
+			        Id = 9, Title = "John English 2"
+			    }
+            };
 		}
 	}
 }

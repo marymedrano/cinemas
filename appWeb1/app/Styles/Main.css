@@ -1,2 +1,17 @@
-﻿ 
-
+﻿
+body {
+    background-color: #FF0000;
+}
+        
+P { 
+    font-size : 12pt; 
+    font-family : arial,helvetica; 
+    font-weight : normal; 
+} 
+H1 { 
+    font-size : 36pt; 
+    font-family : verdana,arial; 
+    text-decoration : underline; 
+    text-align : center; 
+    background-color : Teal; 
+} 

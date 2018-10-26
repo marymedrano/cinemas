@@ -5,6 +5,6 @@ namespace Cinemas.Services
 {
 	public interface IMovieService
 	{
-		List<MovieDto> FindFeatureMovies();
+		List<MovieDto> FindFeaturedMovies();
 	}
 }
