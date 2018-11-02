@@ -18,11 +18,13 @@
 	
 	<div class="row">
 		<div class="col-md-12">
+		    <%--https://getbootstrap.com/docs/4.1/components/list-group/#basic-example--%>
 			<ul class="list-group">
-				<asp:Repeater ID="Repeater1" runat="server">
+				<asp:Repeater ID="movieListRepeater" runat="server">
 					<ItemTemplate>
 						<li class="list-group-item">
 							<asp:Label runat="server" ID="movie" Text='<%# Eval("Title") %>' />
+						    [<asp:Label runat="server" ID="Label1" Text='<%# Eval("Rating") %>' />]
 						</li>
 					</ItemTemplate>
 				</asp:Repeater>

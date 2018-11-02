@@ -12,5 +12,7 @@ namespace Cinemas.Services.Dto
 		public string Title { get; set; }
 
 		public string ImageUrl { get; set; }
+
+        public double Rating { get; set; }
 	}
 }

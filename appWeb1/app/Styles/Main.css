@@ -1,9 +1,9 @@
 ﻿
 body {
-    background-color: #FF0000;
+    /*background-color: gray !important;*/
 }
         
-P { 
+/*P { 
     font-size : 12pt; 
     font-family : arial,helvetica; 
     font-weight : normal; 
@@ -14,4 +14,4 @@ H1 {
     text-decoration : underline; 
     text-align : center; 
     background-color : Teal; 
-} 
+}*/ 
