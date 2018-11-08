@@ -68,12 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\acercade.aspx" />
+    <Content Include="app\Adm.aspx" />
     <Content Include="app\Default.aspx" />
     <Content Include="app\ReservarWebForm.aspx" />
     <Content Include="app\Styles\Main.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="HtmlPage1.html" />
+    <Content Include="app\Crear.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +84,13 @@
     </Compile>
     <Compile Include="app\acercade.aspx.designer.cs">
       <DependentUpon>acercade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="app\Adm.aspx.cs">
+      <DependentUpon>Adm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app\Adm.aspx.designer.cs">
+      <DependentUpon>Adm.aspx</DependentUpon>
     </Compile>
     <Compile Include="app\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -105,7 +113,16 @@
     <Compile Include="app\Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="Core\Genre.cs" />
+    <Compile Include="app\Crear.aspx.cs">
+      <DependentUpon>Crear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app\Crear.aspx.designer.cs">
+      <DependentUpon>Crear.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Dto\CreateMovieInput.cs" />
     <Compile Include="Services\Dto\MovieDto.cs" />
     <Compile Include="Services\IMovieService.cs" />
     <Compile Include="Services\MovieServiceMock.cs" />

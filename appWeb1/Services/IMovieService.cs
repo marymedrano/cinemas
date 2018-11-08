@@ -6,5 +6,9 @@ namespace Cinemas.Services
 	public interface IMovieService
 	{
 		List<MovieDto> FindFeaturedMovies();
+
+	    List<MovieDto> GetAll();
+
+	    MovieDto AddMovie(CreateMovieInput input);
 	}
 }

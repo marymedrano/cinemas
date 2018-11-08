@@ -4,7 +4,6 @@
 	<link href="styles/Main2.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 
-
 <asp:Content ContentPlaceHolderID="principal" runat="server">
 	<div class="row">
 		<div class="col-md-12">

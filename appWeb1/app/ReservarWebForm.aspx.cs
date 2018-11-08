@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Web.UI.WebControls;
 using Cinemas.Services;
 using Cinemas.Services.Dto;
 
@@ -11,12 +13,14 @@ namespace Cinemas.app
         {
             IMovieService movieService = new MovieServiceMock();
             List<MovieDto> movies = movieService.FindFeaturedMovies();
-
+            
             this.DropDownListMovies.DataSource = movies;
             this.DropDownListMovies.DataValueField = "Id";
             this.DropDownListMovies.DataTextField = "Title";
             this.DropDownListMovies.DataBind();
         }
+
+        
 
         protected void Unnamed2_Click(object sender, EventArgs e)
         {
